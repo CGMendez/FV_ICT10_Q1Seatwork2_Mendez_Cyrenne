@@ -24,6 +24,6 @@ display(f"Year Established: {year_established}", target="header")
 # the product names variable alongside the data is called a list. 
 #display("Product Names:")
 
-business_hours = "Open from 8:00 AM to 12:00 AM"
+business_hours = "Opening Hours: 8:00 AM - 12:00 AM" 
 display(business_hours, target="footer")
 # the business hours variable alongside the data is called a string.
