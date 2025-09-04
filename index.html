@@ -10,22 +10,99 @@
         
         <style>
             .container{
+                background-color: lightblue;
                 font-size: 20px;
                 text-align: center;
                 border: solid;
-                border-radius: 50px;
-                padding-top: 5px;
+                border-radius:50px;
+                padding-bottom: 5px;
                 width: 50%;
+                margin-top: 50px
             }
+            
+            .table-info{
+                text-align: center;
+                border-radius: 50px;
+            }
+
+            table{
+                border-radius: 50px;
+                border-width: 4px;
+            }
+
+            #header{
+                font-size: 20px;
+                color: grey;
+                font-weight: bolder;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            #footer{
+                font-size: 10px;
+                color: grey;
+                font-weight: bolder;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            .container2{
+                background-color: lightblue;
+                font-size: 50px;
+                text-align: center;
+                border: solid;
+                border-radius:50px;
+                padding-bottom: 5px;
+                width: 50%;
+                margin: 50px auto;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+            }
+
             
         </style>
     </head>
     <body>
-        <div class="container"><script type="py" src="main.py"></script></div>
-        
-            <table class="table table-responsive table-stripped">
-                <th>Product Name:</th>
-                <th>Price:</th>
-            </table>
+        <div class="container">
+            <span id="header"></span>
+            <script type="py" src="main.py"></script>
+        </div>
+
+        <br><br>     
+        <table class="table table-responsive table-bordered table-striped" style="width: 75%; margin-top: 10px; text-align: center; margin-left: auto; margin-right: auto;">
+            <tr>
+                 <th class="table-info">Products</th>
+                 <th class="table-info">Price(₱)</th>       
+            </tr>
+            <tr>
+                <td>Adobo</td>
+                <td>₱150</td>
+            </tr>
+            <tr>
+                <td>Bisaya Utan</td>
+                <td>₱200</td>
+            </tr>
+            <tr>
+                <td>Lechon Kawali</td>
+                <td>₱415</td>
+            </tr>
+            <tr>
+                <td>Pancit-bihon</td>
+                <td>₱130</td>
+            </tr>
+            <tr>
+                <td>Kare-Kare</td>
+                <td>₱215</td>
+            </tr>
+        </table>
+          
+        <div class="container2">
+            <span id="footer"></span>
+        </div>
+
+            
     </body>
 </html> 
